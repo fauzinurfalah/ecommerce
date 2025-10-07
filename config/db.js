@@ -6,7 +6,7 @@ if (!chaced) {
     chaced = global.mongoose = { conn: null, promise: null}
 }
 
-async function dbConnect() {
+async function connectDB() {
     if (chaced.conn) {
         return chaced.conn
     }
