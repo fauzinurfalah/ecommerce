@@ -16,7 +16,7 @@ async function dbConnect() {
             bufferCommands: false,
         }
 
-        chaced.promise = mongoose.connect(`${process.env.MONGODB_URI}/ecomerce`, opts).then( mongoose =>{
+        chaced.promise = mongoose.connect(`${process.env.MONGODB_URI}/ecommerce`, opts).then( mongoose =>{
             return mongoose
         })
         
